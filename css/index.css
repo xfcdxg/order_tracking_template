@@ -1,0 +1,83 @@
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+#tab {
+  /*border-bottom: 1px solid #f5f5f6;*/
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,.2)
+}
+#tab li {
+  display: inline-block;
+  font-size: 14px;
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 6px 0;
+  color: #b5b5b5;
+  cursor: pointer;
+  background-color: #fff;
+}
+#tab li.active {
+  background-color: #40a0f3;
+  color: #fff;
+}
+#sider {
+  display: inline-block;
+  width: 100px;
+  border-right: 1px solid #f5f5f6;
+  box-sizing: border-box;
+  padding-right: 8px;
+}
+#sider li {
+  width: 100%;
+  padding: 8px 0;
+  text-align: right;
+  font-size: 12px;
+  color: #b5b5b5;
+}
+#sider li.active {
+  color: #40a0f3;
+}
+#content {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+#content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#content table th {
+  font-weight: normal;
+  font-size: 14px;
+  color: #424242;
+  padding-bottom: 12px;
+}
+#content table td {
+  font-weight: normal;
+  font-size: 14px;
+  color: #424242;
+  text-align: center;
+  padding: 6px 0;
+}
+#content table tr.warning {
+  background-color: #ffe4e4;
+}
+.company {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding:12px 16px;
+  box-sizing: border-box;
+}
+.title {
+  padding: 6px 0;
+  border-bottom: 3px solid #419ff3;
+  font-size: 20px;
+  text-align: right;
+  color: #2d2d2d;
+}
+@media screen and (max-width: 768px) {
+  .company {
+    width: 100%;
+  }
+}
